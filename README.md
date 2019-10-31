@@ -4,11 +4,7 @@
 
 ### av Malin Lind, mali1710@student.miun.se
 
-# Moment 3 - CSS-preprocessorer och SASS
-
-## Syfte och beskrivning
-
-Den här sidan är skapad för att visa användning av Node.js och automatiseringsprecess med Gulp samt Sass.
+# Projekt - adminsida
 
 ### Paket som används
 
@@ -56,6 +52,6 @@ Konverterar ES6 och nya till ES5
 
 ## Om systemet
 
-För att använda detta system så klonar man ner det till sin egna dator med länken: [https://github.com/mali1710/moment3.git].
+För att använda detta system så klonar man ner det till sin egna dator med länken: [https://github.com/mali1710/prjekt-admin].
 
 Kör sedan "npm init" för att installera. För att sätta igång gulp-processerna kör kommandot "gulp".
