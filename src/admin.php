@@ -36,20 +36,6 @@ include("includes/header.php");
     </tr>
   </thead>
   <tbody id="work-list">
-<!--     <tr>
-      <td>Aug 2017 - Sep 2018</td>
-      <td>Best Western Plaza</td>
-      <td>Hotellreceptionist</td>
-      <td><i class="fa fa-pencil"></i></td>
-      <td><i class="fa fa-trash"></i></td>
-    </tr>
-    <tr>
-    <td>Aug 2017 - Sep 2018</td>
-      <td>Best Western Plaza</td>
-      <td>Hotellreceptionist</td>
-      <td><i class="fa fa-pencil"></i></td>
-      <td><i class="fa fa-trash"></i></td>
-    </tr> -->
 
   </tbody>
       <tr>
@@ -59,18 +45,6 @@ include("includes/header.php");
 <form class="form-inline" id="add-work">
 </form>
     <form class="form-inline" id="work-form">
-        <!-- <div class="col">
-        <input type="text" id="input-date" class="form-control" placeholder="Datum">
-        </div>
-        <div class="col">
-        <input type="text" class="form-control" id="input-company" placeholder="Företag">
-        </div>
-
-        <div class="col">
-        <input type="text" class="form-control" id="input-title" placeholder="Titel">
-        </div>
-
-        <button id="work-submit" type="submit" class="btn btn-primary">Spara</button> -->
 
     </form>
 
@@ -92,38 +66,15 @@ include("includes/header.php");
     </tr>
   </thead>
   <tbody id="education-list">
-    <tr>
-      <td>2017 - 2020</td>
-      <td>Mittuniversitetet</td>
-      <td>Webbutveckling</td>
-      <td><i class="fa fa-pencil"></i></td>
-      <td><i class="fa fa-trash"></i></td>
-    </tr>
-    <tr>
-    <td>2017 - 2020</td>
-      <td>Mittuniversitetet</td>
-      <td>Webbutveckling</td>
-      <td><i class="fa fa-pencil"></i></td>
-      <td><i class="fa fa-trash"></i></td>
-    </tr>
-
   </tbody>
-</table>
-<form class="form-inline">
-        <div class="col">
-        <input type="text" class="form-control" placeholder="First name">
-        </div>
-        <div class="col">
-        <input type="text" class="form-control" placeholder="First name">
-        </div>
+  <tr>
+        <td colspan="5"><a onclick="addEducation()" class="update text-center "><i class="fa fa-plus fa-2x"></i></a></td>
+      </tr>
 
-        <div class="col">
-        <input type="text" class="form-control" placeholder="Last name">
-        </div>
-        <div class="col">
-        <input type="text" class="form-control" placeholder="Last name">
-        </div>
-        <button type="submit" class="btn btn-primary">Spara</button>
+</table>
+<form class="form-inline" id="add-education">
+</form>
+<form class="form-inline" id="education-form">
     
     </form>
 </div>
@@ -132,53 +83,21 @@ include("includes/header.php");
 <h1 class="work cv-title">Projekt</h1>
 
 <div class="card-deck mb-3" id="project-list">
-  <div class="card">
-    <img class="card-img-top" src="images/site-1.JPG" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <a href="#" class="btn btn-primary"><i class="fa fa-pencil"></i></a>
-      <a href="#" class="btn btn-primary"><i class="fa fa-trash"></i></a>
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="images/screenshot.png" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <a href="#" class="btn btn-primary"><i class="fa fa-pencil"></i></a>
-      <a href="#" class="btn btn-primary"><i class="fa fa-trash"></i></a>
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="images/site-1.JPG" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <a href="#" class="btn btn-primary"><i class="fa fa-pencil"></i></a>
-      <a href="#" class="btn btn-primary"><i class="fa fa-trash"></i></a>
-    </div>
-  </div>
   
 </div>
-<form class="form-inline">
-        <div class="col">
-        <input type="text" class="form-control" placeholder="First name">
-        </div>
-        <div class="col">
-        <input type="text" class="form-control" placeholder="First name">
-        </div>
 
-        <div class="col">
-        <input type="text" class="form-control" placeholder="Last name">
-        </div>
-        <div class="col">
-        <input type="text" class="form-control" placeholder="Last name">
-        </div>
-        <button type="submit" class="btn btn-primary">Spara</button>
+<div class="container my-5">
+        <a onclick="addProject()" class="update text-center "><i class="fa fa-plus fa-2x"></i></a>
+</div>
+
+<form class="form-inline justify-content-between align-content-between flex-wrap" id="add-project">
+</form>
+<form class="form-inline my-5" id="project-form">
     
     </form>
 </div>
+<div class="border-top my-5"></div>
+
 
     <?php include("includes/footer.php");
 ?>
