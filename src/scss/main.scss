@@ -1,0 +1,10 @@
+@import "config";
+@import "login";
+@import "admin";
+@import "footer";
+
+@import "mixins";
+
+body {
+  background-color: $bg-color;
+}

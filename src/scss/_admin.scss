@@ -1,0 +1,47 @@
+.table-head {
+  background-color: $dark-font;
+  color: $bg-color;
+  font-family: $hero-font;
+}
+
+.cv-title {
+  color: $dark-font;
+  width: 90%;
+  margin: auto;
+  font-size: 2.5em;
+  font-family: $hero-font;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 2px 2px rgba(219, 215, 209, 1);
+}
+
+table {
+  a {
+    cursor: pointer;
+  }
+}
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+
+.card {
+  i {
+    color: $bg-color;
+  }
+  a {
+    cursor: pointer;
+  }
+}
+
+.form-inline {
+  #work-submit {
+    color: $bg-color;
+  }
+}
+.form-inline {
+  #work-update {
+    color: $bg-color;
+  }
+}
