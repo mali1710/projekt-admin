@@ -1,25 +1,22 @@
 <?php
-include("classes/Users.class.php");
-include("includes/config.php");
-
-session_start();
+include_once ('includes/config.php');
 if(!isset($_SESSION['username'])){
-    header("Location: login.php");
+  header ('Location: login.php');
+  exit();
 }
+$page_title = "Administration";
+include_once("includes/header.php");
 $username = $_SESSION['username'];
 $users = new Users();
 if(isset($_POST['logout'])){
     $users->logoutUser();
-    header("Location: login.php");
+    header("Location: logout.php");
 }
-
-$page_title = "Administration";
-include("includes/header.php");
 ?>
-
-    <form method="post" action="admin.php" class="form-signin">
+<form method="post" action="admin.php" class="form-signin">
         <h1>Välkommen <?=$username?>!</h1>
-        <input type="submit" name="logout" value="Logga ut" class="btn btn-lg btn-primary btn-block">
+        <a type="submit" href="logout.php" class="btn btn-lg btn-primary btn-block">Logga ut</a>
+        <!-- <input type="submit" name="logout" value="Logga ut" class="btn btn-lg btn-primary btn-block"> -->
     </form>
     <div class="border-top my-5"></div>
 <div class="container">
@@ -97,7 +94,5 @@ include("includes/header.php");
     </form>
 </div>
 <div class="border-top my-5"></div>
-
-
-    <?php include("includes/footer.php");
+<?php include("includes/footer.php");
 ?>

@@ -1,8 +1,7 @@
-console.log("Main");
 //Variabler
-const urlE = "http://localhost/WebbIII/projekt/Webapp/education.php/education/";
-const urlP = "http://localhost/WebbIII/projekt/Webapp/projects.php/projects/";
-const urlW = "http://localhost/WebbIII/projekt/Webapp/work.php/work/";
+const urlE = "https://www.mallind.se/webapp/education.php/education/";
+const urlP = "https://www.mallind.se/webapp/projects.php/projects/";
+const urlW = "https://www.mallind.se/webapp/work.php/work/";
 const workForm = document.getElementById("work-form");
 const educationForm = document.getElementById("education-form");
 const projectForm = document.getElementById("project-form");

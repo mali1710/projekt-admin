@@ -1,5 +1,3 @@
-console.log("Projects");
-
 // _____________________________________________________________________________
 //PROJECTS
 // _____________________________________________________________________________
@@ -57,7 +55,6 @@ function newProject() {
 
   fetch(urlP, {
     method: "POST",
-    mode: "cors",
     headers: {
       Accept: "application/json, text/plain, */*"
       // "Content-type": "application/json"
@@ -110,11 +107,9 @@ function updateProject(project) {
               <a id="education-update" onclick="sendProject(${input.id})" class="btn btn-primary"/>Spara</a>`;
       });
       projectForm.innerHTML = output;
-      console.log(output);
     });
 }
 function sendProject(id) {
-  console.log(id);
   const inputImage = document.getElementById("input-image").value;
   const inputTitle = document.getElementById("input-title").value;
   const inputDescription = document.getElementById("input-description").value;
@@ -128,10 +123,8 @@ function sendProject(id) {
     url: inputUrl
   });
 
-  console.log(jsonStr);
   fetch(urlP, {
     method: "PUT",
-    mode: "cors",
     headers: {
       Accept: "application/json, text/plain, */*"
       // "Content-type": "application/json"
@@ -155,7 +148,6 @@ function deleteProject(id) {
   });
   fetch(urlP, {
     method: "DELETE",
-    mode: "cors",
     body: jsonStr
   })
     .then(res => res.json())

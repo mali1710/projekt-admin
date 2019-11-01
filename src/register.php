@@ -1,9 +1,8 @@
 <?php
-$page_title = "Registrera";
 include ("includes/config.php");
+$page_title = "Registrera";
 include("includes/header.php");
 include("classes/Users.class.php");
-
 
 if(isset($_POST['submit'])){
     $username = $_POST['username'];

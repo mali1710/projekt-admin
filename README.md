@@ -1,10 +1,12 @@
 # Webbutveckling III
 
-## Webbtjänst för versionshantering
-
 ### av Malin Lind, mali1710@student.miun.se
 
 # Projekt - adminsida
+
+Det här är administrationssidan för https://github.com/mali1710/projekt-sida. Den implementerar CRUD mot
+API som finns här https://github.com/mali1710/projekt-app. Den här sidan använder fetch för att läsa ut, redigera,
+uppdatera och radera poster.
 
 ### Paket som används
 
@@ -52,6 +54,6 @@ Konverterar ES6 och nya till ES5
 
 ## Om systemet
 
-För att använda detta system så klonar man ner det till sin egna dator med länken: [https://github.com/mali1710/prjekt-admin].
+För att använda detta system så klonar man ner det till sin egna dator med länken: [https://github.com/mali1710/projekt-admin].
 
 Kör sedan "npm init" för att installera. För att sätta igång gulp-processerna kör kommandot "gulp".

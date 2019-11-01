@@ -1,5 +1,3 @@
-console.log("education");
-
 // _____________________________________________________________________________
 //EDUCATION
 // _____________________________________________________________________________
@@ -53,7 +51,6 @@ function newEducation() {
 
   fetch(urlE, {
     method: "POST",
-    mode: "cors",
     headers: {
       Accept: "application/json, text/plain, */*"
       // "Content-type": "application/json"
@@ -102,11 +99,9 @@ function updateEducation(education) {
             <a id="education-update" onclick="sendEducation(${input.id})" class="btn btn-primary"/>Spara</a>`;
       });
       educationForm.innerHTML = output;
-      console.log(output);
     });
 }
 function sendEducation(id) {
-  console.log(id);
   const inputDates = document.getElementById("input-dates").value;
   const inputSchool = document.getElementById("input-school").value;
   const inputProgram = document.getElementById("input-program").value;
@@ -118,10 +113,8 @@ function sendEducation(id) {
     program: inputProgram
   });
 
-  console.log(jsonStr);
   fetch(urlE, {
     method: "PUT",
-    mode: "cors",
     headers: {
       Accept: "application/json, text/plain, */*"
       // "Content-type": "application/json"
@@ -145,7 +138,6 @@ function deleteEducation(id) {
   });
   fetch(urlE, {
     method: "DELETE",
-    mode: "cors",
     body: jsonStr
   })
     .then(res => res.json())

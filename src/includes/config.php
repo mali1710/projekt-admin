@@ -1,16 +1,18 @@
 <?php
-/* Database credentials. Assuming you are running MySQL
-server with default setting (user 'root' with no password) */
-define("DBHOST", "localhost");
-define("DBUSER", "admin");
-define("DBPASS", "admin");
-define("DBDATABASE", "admin");
- 
-/* Attempt to connect to MySQL database */
-$mysqli = new mysqli(DBHOST, DBUSER, DBPASS, DBDATABASE);
- 
-// Check connection
-if($mysqli === false){
-    die("ERROR: Could not connect. " . $mysqli->connect_error);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+if (session_status() == PHP_SESSION_NONE){
+    session_start();
 }
+/* Database credentials */
+define("DBHOST", "");
+define("DBUSER", "");
+define("DBPASS", "");
+define("DBDATABASE", "");
+
+
+spl_autoload_register(function ($class){
+    include 'classes/' . $class . '.class.php';
+});
 ?>

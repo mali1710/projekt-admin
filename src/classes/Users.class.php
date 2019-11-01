@@ -1,5 +1,4 @@
 <?php
-
 class Users
 {
     private $db;
@@ -44,12 +43,11 @@ class Users
         }
     }
 
-    //logga ut
-    public function logoutUser(){
-        session_unset();
-        session_destroy();
-
-        header("location:login.php");
-        exit();
-    }
+    // //logga ut
+    // public function logoutUser(){
+    //     session_unset();
+    //     session_destroy();
+    //     header("location:login.php");
+    //     exit();
+    // }
 }

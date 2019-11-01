@@ -1,5 +1,3 @@
-console.log("work");
-
 // _____________________________________________________________________________
 //WORK
 // _____________________________________________________________________________
@@ -52,7 +50,6 @@ function sendAdd() {
 
   fetch(urlW, {
     method: "POST",
-    mode: "cors",
     headers: {
       Accept: "application/json, text/plain, */*"
       // "Content-type": "application/json"
@@ -101,11 +98,9 @@ function updateWork(work) {
           <a id="work-update" onclick="sendUpdate(${input.id})" class="btn btn-primary"/>Spara</a>`;
       });
       workForm.innerHTML = output;
-      console.log(output);
     });
 }
 function sendUpdate(id) {
-  console.log(id);
   const inputDate = document.getElementById("input-date").value;
   const inputCompany = document.getElementById("input-company").value;
   const inputTitle = document.getElementById("input-title").value;
@@ -117,10 +112,8 @@ function sendUpdate(id) {
     title: inputTitle
   });
 
-  console.log(jsonStr);
   fetch(urlW, {
     method: "PUT",
-    mode: "cors",
     headers: {
       Accept: "application/json, text/plain, */*"
       // "Content-type": "application/json"
@@ -144,7 +137,6 @@ function deleteWork(id) {
   });
   fetch(urlW, {
     method: "DELETE",
-    mode: "cors",
     body: jsonStr
   })
     .then(res => res.json())
